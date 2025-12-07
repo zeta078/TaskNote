@@ -1,0 +1,32 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PHP cache/log
+*.log
+*.cache
+
+# Composer (if used later)
+vendor/
+composer.lock
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Node (if use npm for frontend later)
+node_modules/
+
+# Backup/temporary files
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# mac zipped attribute files
+__MACOSX/
