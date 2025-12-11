@@ -1,0 +1,158 @@
+/* ========= 기본 설정 ========= */
+* {
+    font-family: "맑은 고딕";
+}
+
+body {
+    background: #f4f8ff;
+    margin: 0;
+}
+
+/* ========= 네비바 ========= */
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2D4DC2;
+    white-space: nowrap;
+}
+
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: #4b5563;
+    padding: 6px 12px;
+    border-radius: 999px;
+    transition: 0.15s;
+}
+
+.nav-link:hover {
+    background: rgba(45, 77, 194, 0.08);
+    color: #2D4DC2;
+}
+
+.nav-link.active {
+    background: #2D4DC2;
+    color: white;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+/* ========= 로그아웃 버튼 ========= */
+.btn-logout {
+    background: #ff4444;
+    color: white !important;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-logout:hover {
+    background: #cc0000;
+}
+
+/* ========= 메인 컨테이너 ========= */
+.container {
+    width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+/* ========= 공통 텍스트 ========= */
+h1 {
+    color:#2D4DC2;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+p { 
+    font-size: 15px; 
+    color:#555; 
+}
+
+/* ========= 표 공통 스타일 ========= */
+table {
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+}
+
+th, td {
+    border:1px solid #ccc;
+    padding:6px 8px;
+}
+
+th {
+    background:#f0f0f0;
+}
+
+/* ========= 상태 배지 ========= */
+.badge {
+    display:inline-block;
+    padding:2px 6px;
+    border-radius:10px;
+    font-size:11px;
+    color:white;
+}
+.badge-doing { background:#2D4DC2; }
+.badge-done  { background:#4CAF50; }
+
+/* ========= 날짜 강조 ========= */
+.due-today {
+    color:#D84315;
+    font-weight:bold;
+}
+.due-past {
+    color:#B71C1C;
+    font-weight:bold;
+}
+
+/* ========= 공통 버튼 ========= */
+.btn-main {
+    display: inline-block;
+    padding: 8px 14px;
+    background:#2D4DC2;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    font-size: 13px;
+}
+.btn-main:hover {
+    background:#233a96;
+}
