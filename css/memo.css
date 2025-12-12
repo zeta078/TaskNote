@@ -1,0 +1,111 @@
+.memo-list {
+    margin-top:15px;
+}
+
+.memo-item {
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    padding:10px 12px;
+    margin-bottom:10px;
+    background:#f9fafb;
+    text-align:left;
+}
+
+.memo-title-row {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:4px;
+}
+
+.memo-title {
+    font-weight:bold;
+}
+
+.memo-date {
+    font-size:11px;
+    color:#999;
+}
+
+.memo-body {
+    font-size:13px;
+    color:#555;
+    white-space:normal;
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+}
+
+.memo-actions {
+    margin-top:6px;
+    text-align:right;
+}
+
+.memo-actions button {
+    padding:4px 10px;
+    font-size:12px;
+    cursor:pointer;
+}
+
+textarea {
+    width: 95%;
+    min-height: 150px;   
+    padding: 1px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: vertical;    
+}
+
+/* 관리 칸 전체 */
+.action-cell {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.action-cell form {
+    display: inline-block;
+    margin: 0 2px;
+}
+.action-cell button,
+.action-cell a {
+    display: inline-block;
+    margin: 0 2px;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* 기본 회색 버튼 (완료/미완료, 상세, 수정 공통) */
+.btn-action {
+    background: #eef1f6;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: #111827;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-action:hover {
+    background: #d9dee6;
+    border-color: #c0c4ce;
+}
+
+/* 삭제 전용 빨간 버튼 */
+.btn-danger {
+    background: #fee2e2;
+    border-color: #fca5a5;
+    color: #b91c1c;
+}
+
+.btn-danger:hover {
+    background: #fecaca;
+    border-color: #f87171;
+}
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+/* ===== 회원가입 레이아웃 ===== */
+body {
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#eef2ff;
+}
+
+/* 카드 */
+.container {
+    width:400px;
+    padding:26px 26px 24px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(15, 23, 42, 0.18);
+    box-sizing:border-box;
+}
+
+/* 제목 */
+.title {
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:18px;
+    text-align:center;
+    color:#1f2937;
+}
+
+/* 입력 그룹 */
+.inputBox {
+    margin-bottom:14px;
+}
+
+label {
+    display:block;
+    font-weight:bold;
+    font-size:13px;
+    margin-bottom:4px;
+    color:#374151;
+}
+
+input, select {
+    width:100%;
+    padding:8px 10px;
+    border:1px solid #d1d5db;
+    border-radius:6px;
+    margin-top:2px;
+    font-size:14px;
+    box-sizing:border-box;
+    outline:none;
+    transition: border-color .15s, box-shadow .15s;
+}
+
+input:focus, select:focus {
+    border-color:#2D4DC2;
+    box-shadow:0 0 0 2px rgba(45, 77, 194, 0.18);
+}
+
+/* 전화번호 라인 */
+.inputBox .phone-row {
+    display:flex;
+    gap:6px;
+}
+
+.inputBox .phone-row select,
+.inputBox .phone-row input {
+    width:auto;
+    flex:1;
+}
+
+/* 버튼 */
+.btn {
+    width:100%;
+    padding:10px;
+    font-size:15px;
+    background:#2D4DC2;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:6px;
+    transition: background .15s, transform .05s;
+}
+
+.btn:hover {
+    background:#233a96;
+}
+
+.btn:active {
+    transform:translateY(1px);
+}
+
+/* 메시지/에러 텍스트 */
+.msg {
+    color:#dc2626;
+    font-size:12px;
+    margin-top:3px;
+}
+
+/* 성공 박스 */
+.success-box {
+    text-align:center;
+    font-size:18px;
+    color:#2D4DC2;
+    font-weight:bold;
+}
+
+/* 링크 */
+a {
+    color:#2D4DC2;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}

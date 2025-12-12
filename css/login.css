@@ -1,0 +1,97 @@
+/* ===== 로그인 레이아웃 ===== */
+body {
+    margin: 0;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #e3ecff, #f4f8ff);
+}
+
+/* 카드 */
+.container {
+    width:360px;
+    padding:26px 26px 24px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(15, 23, 42, 0.18);
+}
+
+/* 제목 */
+.title {
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:18px;
+    color:#1f2937;
+}
+
+/* 입력 영역 */
+.inputBox {
+    margin-bottom:14px;
+}
+
+input {
+    width:100%;
+    padding:10px 11px;
+    border:1px solid #d1d5db;
+    border-radius:6px;
+    font-size:14px;
+    box-sizing:border-box;
+    outline:none;
+    transition: border-color .15s, box-shadow .15s;
+}
+
+input:focus {
+    border-color:#2D4DC2;
+    box-shadow:0 0 0 2px rgba(45, 77, 194, 0.18);
+}
+
+/* 로그인 버튼 */
+.btn {
+    width:100%;
+    padding:10px;
+    margin-top:12px;
+    background:#2D4DC2;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:bold;
+    transition: background .15s, transform .05s;
+}
+
+.btn:hover {
+    background:#233a96;
+}
+
+.btn:active {
+    transform:translateY(1px);
+}
+
+/* 에러 메세지 */
+.msgFail {
+    text-align:center;
+    color:#dc2626;
+    margin-bottom:8px;
+    font-size:13px;
+}
+
+/* 하단 링크 */
+.signupLink {
+    text-align:center;
+    margin-top:16px;
+    font-size:13px;
+    color:#6b7280;
+}
+
+.signupLink a {
+    color:#2D4DC2;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.signupLink a:hover {
+    text-decoration:underline;
+}

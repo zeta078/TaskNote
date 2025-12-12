@@ -1,0 +1,98 @@
+/* 목록 */
+.list-table {
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+    margin-top:10px;
+}
+
+.list-table tr:nth-child(even) {
+    background:#fafafa;
+}
+
+.row-done {
+    background:#f5f7ff;
+}
+
+.todo-content-preview {
+    max-width: 320px;
+    font-size:13px;
+    color:#555;
+    white-space:normal;
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+}
+
+/* 상세 뷰 아코디언 */
+.detail-row { display:none; }
+.detail-row.open { display:table-row; }
+
+.detail-cell {
+    background:#f9fafb;
+    padding:10px 14px;
+    border-top:1px solid #e5e7eb;
+    border-bottom:1px solid #e5e7eb;
+    font-size:14px;
+    color:#444;
+}
+
+.detail-content {
+    white-space:pre-line;
+}
+
+.btn-detail {
+    background:#e5e7eb;
+    border:1px solid #d1d5db;
+    border-radius:4px;
+}
+
+.btn-detail:hover {
+    background:#d1d5db;
+}
+
+.action-cell {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.action-cell form {
+    display: inline-block;
+    margin: 0 2px;
+}
+.action-cell button,
+.action-cell a {
+    display: inline-block;
+    margin: 0 2px;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* 기본 회색 버튼 (완료/미완료, 상세, 수정 공통) */
+.btn-action {
+    background: #eef1f6;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: #111827;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-action:hover {
+    background: #d9dee6;
+    border-color: #c0c4ce;
+}
+
+/* 삭제 전용 빨간 버튼 */
+.btn-danger {
+    background: #fee2e2;
+    border-color: #fca5a5;
+    color: #b91c1c;
+}
+
+.btn-danger:hover {
+    background: #fecaca;
+    border-color: #f87171;
+}
