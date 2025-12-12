@@ -3,6 +3,13 @@
 session_start();
 $currentPage = 'home';
 
+// 로그아웃 alert 처리
+if (isset($_SESSION['logout_alert'])) {
+    echo "<script>alert('로그아웃 되었습니다.');</script>";
+    unset($_SESSION['logout_alert']);
+}
+
+
 // DB는 "로그인 된 경우"에만 연결
 $conn     = null;
 $rstTodo  = null;
@@ -181,7 +188,7 @@ if (isset($_SESSION["userid"])) {
             echo "<p>아직 작성된 메모가 없습니다.</p>";
         }
         ?>
-
+    
     <?php } ?>
 
 </div>

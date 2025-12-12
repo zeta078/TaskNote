@@ -1,9 +1,19 @@
-<!-- logout.php -->
 <?php
 session_start();
-session_unset();
+$_SESSION = [];
+
+// 세션 쿠키 삭제
+if (ini_get("session.use_cookies")) {
+    $params = session_get_cookie_params();
+    setcookie(session_name(), '', time() - 42000,
+        $params["path"], $params["domain"],
+        $params["secure"], $params["httponly"]
+    );
+}
+
 session_destroy();
-//header("Location: main.php");
-echo "<script>alert('로그아웃 되었습니다'); location.href='login.php';</script>";
-exit;
 ?>
+<script>
+  alert("로그아웃 되었습니다.");
+  location.href = "main.php";
+</script>
